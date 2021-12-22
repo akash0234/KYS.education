@@ -33724,6 +33724,7 @@ a.animated-button:link, a.animated-button:visited{
     align-self: center;
     align-content: center;
     align-items: center;
+    z-index: 99;
 }
 
 /* Victoria Buttons */
@@ -33743,10 +33744,31 @@ a.animated-button.victoria-one:after {
         top:-70px;
       
     }
+    .section.lightweight-template{
+        margin-top:225px;
+    }
+    .content-left-banner .card-class{
+        justify-content: center;
+    }
+    .content-left-banner .card-class li  {
+        width: 35%;
+        display: inline-flex;
+    }
+    .content-left-banner .card-class li:nth-of-type(even)  {
+    justify-content: left;
+    }
+    .content-left-banner .card-class li:nth-of-type(odd) {
+        justify-content: right;
+    }
 }
 @media(min-width:992px){
     .content-left-banner{
        padding-left: 100px;
+    }
+    .content-left-banner .card-class{
+        list-style: none;
+        display: inline-flex;
+        padding-left: initial;
     }
 
 }
@@ -33785,7 +33807,14 @@ a.animated-button.victoria-one:after {
         max-width: 450px;
     }
     .perspective-mockups{
-        top:250px
+        top: 250px;
+        flex-wrap: nowrap;
+        width: 750px;
+        right: 4%;
+        left: initial;
+    }
+    .perspective-mockups .phone-small{
+        left: 70px;
     }
 }
 
