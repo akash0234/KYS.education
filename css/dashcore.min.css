@@ -31684,7 +31684,7 @@ section.shadow {
     width: 100%;
     line-height: 0;
     direction: ltr;
-    bottom: -1px
+    bottom: -5px;
 }
 
 .divider-shape svg {
@@ -33701,6 +33701,9 @@ a.animated-button:link:hover, a.animated-button:visited:hover {
 a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
 	height: 450%;
 }
+.card-class{
+    display: flex;
+}
 a.animated-button:link, a.animated-button:visited{
     position: relative;
     display: block;
@@ -33753,7 +33756,20 @@ a.animated-button.victoria-one:after {
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 }
+.poc-action p{
+    width: 50%;
+}
 @media(max-width:991px){
+    .overlay.overlay-primary.alpha-8:after {
+
+        opacity: .6;
+    }
+    .poc-action p{
+        width: 90%;
+    }
+    .card-class{
+        display: inline-block;
+    }
     .perspective-mockups .phone-small{
         top:-70px;
       
