@@ -33961,7 +33961,10 @@ a.animated-button.victoria-one:after {
     transform: rotate(45deg);
 }
 
-  
+#contactForm  input:focus-visible,  #contactForm  textarea:focus-visible , #contactForm  .number-select:focus-visible{
+    outline: none;
+    border-bottom: 1px solid #000;
+}
   #contactForm  input,  #contactForm  textarea { 
     margin: .8em auto;
     font-family: inherit; 
