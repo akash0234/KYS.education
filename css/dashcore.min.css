@@ -33895,22 +33895,72 @@ a.animated-button.victoria-one:after {
   #contact:hover { background: #666; }
   #contact:active { background: #444; }
   
-  #contactForm { 
+  #contactForm  {
     display: none;
-  
-    border: 6px solid salmon; 
+    border: 2px solid #88284f;
     padding: 2em;
     width: 400px;
     text-align: center;
     background: #fff;
     position: fixed;
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     z-index: 999;
-    
-  }
+    border-radius: 5px;
+    box-shadow: 0 0 0 999em rgb(0 0 0 / 80%);
+}
+
+  .styled-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+.styled-checkbox + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+.styled-checkbox + label:before  {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    left: 0;
+}
+.styled-checkbox:hover + label:before {
+    background: #f35429;
+}
+.styled-checkbox:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+.styled-checkbox:checked + label:before {
+    background: #88284f;
+}
+.styled-checkbox:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+}
+.styled-checkbox:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+}
+.styled-checkbox:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
   
   #contactForm  input,  #contactForm  textarea { 
     margin: .8em auto;
@@ -33919,22 +33969,37 @@ a.animated-button.victoria-one:after {
     font-size: inherit;
     
     display: block; 
-    width: 280px; 
+    width: 100%; 
     padding: .4em;
-  }
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+  #contactForm  .number-select {
+    width: 30%;
+    margin-right: 5px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    font-size: 12px;
+    height: 50px;
+}
+  
   #contactForm  textarea { height: 80px; resize: none; }
   
-  .formBtn { 
-    width: 140px;
+  .formBtn {
+
     display: inline-block;
-    
-    background: teal;
+    background: #88284f;
     color: #fff;
     font-weight: 100;
     font-size: 1.2em;
     border: none;
-    height: 30px;
-  }
+    height: 40px;
+    width: fit-content !important;
+    padding: 10px 25px !important;
+    line-height: 14px;
+    font-size: 18px !important;
+    font-weight: 400;
+}
 @media(max-width:991px){
     .kys-meet .tablet.ipad.landscape {
     
