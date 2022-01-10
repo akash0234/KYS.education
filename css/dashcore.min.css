@@ -23473,7 +23473,120 @@ textarea.form-control.form-control-rounded {
     box-shadow: inset 0 4px 10px 1px #fff, inset 0 0 6px 0 rgba(66, 77, 86, .5), 0 20px 50px -25px rgba(0, 0, 0, .5), 0 0 1px rgba(0, 0, 0, .1);
     max-width: 210px
 }
+.event-block {
+    background: #88284f;
+    background-image: linear-gradient(161deg, rgba(117, 117, 117, 0.03) 0%, rgba(117, 117, 117, 0.03) 50%,rgba(8, 8, 8, 0.03) 50%, rgba(8, 8, 8, 0.03) 100%),linear-gradient(59deg, rgba(245, 245, 245, 0.05) 0%, rgba(245, 245, 245, 0.05) 50%,rgba(68, 68, 68, 0.05) 50%, rgba(68, 68, 68, 0.05) 100%),linear-gradient(286deg, rgba(107, 107, 107, 0.07) 0%, rgba(107, 107, 107, 0.07) 50%,rgba(7, 7, 7, 0.07) 50%, rgba(7, 7, 7, 0.07) 100%),linear-gradient(123deg, rgba(9, 9, 9, 0.09) 0%, rgba(9, 9, 9, 0.09) 50%,rgba(120, 120, 120, 0.09) 50%, rgba(120, 120, 120, 0.09) 100%),linear-gradient(170deg, rgba(202, 202, 202, 0.01) 0%, rgba(202, 202, 202, 0.01) 50%,rgba(19, 19, 19, 0.01) 50%, rgba(19, 19, 19, 0.01) 100%),linear-gradient(210deg, rgba(64, 64, 64, 0.04) 0%, rgba(64, 64, 64, 0.04) 50%,rgba(4, 4, 4, 0.04) 50%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(90deg, rgb(136 40 79),#ed5876);
+    border: 1px solid #88284f;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 25px auto;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(
+45deg);
+}
+.event-block a {
+  font-size: 16px;
+  line-height: 1.2;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin-top: 5px;
+    cursor: pointer;       
+    background: #ffffff;
+    color: #682eb7;
+    border: 1px solid #ffffff; 
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.mid-image-duo{
+    position: relative;
+}
+.mid-image-duo  .phone-small.iphone-x{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.event-block a:hover {
+    background: #fff;
+    color: #9c28b1;
+    border: 1px solid #9c28b1;
+}
+.event-block .event-block-container{
+  width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    padding: 18px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.event-block .titular {
+    display: block;
+    max-width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+        font-size: 16px;
+    background: transparent;
+    line-height: 1.4;
+    font-weight: 300;
+    padding: 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.event-block .the-day {
+    max-width: 150px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: 900;
+    letter-spacing: 3px;
+    position: relative;
+    color: #fff;
+}
+.event-block .the-day:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+    transform: translatex(-50%);
+    width: 65%;
+    height: 1px;
+    border-top: 1px solid #fff;
+    z-index: 0;
+}
 
+.kys-meet .section-heading p{
+    font-size: 24px;
+}
+.kys-meet .section-heading h2{
+    font-size: 32px;
+}
 @media (min-width:768px) {
     .device-twin .phone {
         -webkit-transition: all .4s ease;
@@ -23500,7 +23613,7 @@ textarea.form-control.form-control-rounded {
     background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fff), color-stop(10%, #eef1f3));
     background: linear-gradient(#fff 1%, #eef1f3 10%);
     position: relative;
-    padding-top: 2em;
+ 
     border-radius: .4em
 }
 
@@ -23519,7 +23632,9 @@ textarea.form-control.form-control-rounded {
 }
 
 .browser img {
-    max-width: 100%
+    max-width: 100%;
+    padding-top: 28px !important;
+    border-radius: 5px;
 }
 
 .browser.shadow {
@@ -26650,10 +26765,6 @@ h6 {
     }
 }
 
-.nav-process {
-    margin-left: -30px
-}
-
 .nav-process .nav-item {
     position: relative;
     display: -webkit-box;
@@ -29361,10 +29472,11 @@ hr[class*=bg] {
     height: 1px
 }
 
-.nav-process {
-    min-height: 60px
+.nav-process  {
+    /* min-height: 60px; */
+    width: 30%;
+    margin: auto;
 }
-
 .app-safety .shape {
     position: absolute
 }
@@ -33742,7 +33854,7 @@ a.animated-button:link, a.animated-button:visited{
     margin-right: auto;
     display: flex;
     justify-content: start;
-    margin-top: 50px;
+    margin-top: 150px;;
 }
 /* Victoria Buttons */
 
@@ -33759,7 +33871,93 @@ a.animated-button.victoria-one:after {
 .poc-action p{
     width: 50%;
 }
+
+
+
+
+/*modal*/
+#contact { 
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    margin: 4em auto;
+    width: 100px; 
+    height: 30px; 
+    line-height: 30px;
+    background: teal;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+  
+  #contact:hover { background: #666; }
+  #contact:active { background: #444; }
+  
+  #contactForm { 
+    display: none;
+  
+    border: 6px solid salmon; 
+    padding: 2em;
+    width: 400px;
+    text-align: center;
+    background: #fff;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    z-index: 999;
+    
+  }
+  
+  #contactForm  input,  #contactForm  textarea { 
+    margin: .8em auto;
+    font-family: inherit; 
+    text-transform: inherit; 
+    font-size: inherit;
+    
+    display: block; 
+    width: 280px; 
+    padding: .4em;
+  }
+  #contactForm  textarea { height: 80px; resize: none; }
+  
+  .formBtn { 
+    width: 140px;
+    display: inline-block;
+    
+    background: teal;
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.2em;
+    border: none;
+    height: 30px;
+  }
 @media(max-width:991px){
+    .kys-meet .tablet.ipad.landscape {
+    
+        min-height: 200px;
+
+    }
+    .kys-meet .ipad .screen img {
+        min-height: 100%;
+    }
+    .kys-meet .mid-image-duo .phone-small.iphone-x {
+        top:-50px;
+        transform: scale(0.75);
+    }
+    .kys-meet .section-heading h2 {
+        font-size: 22px;
+    }
+    .kys-meet .section-heading {
+       margin-bottom: 20px; 
+       
+    }
+    .swiper-slide .content{
+        margin-top: 50px;
+    }
     .overlay.overlay-primary.alpha-8:after {
 
         opacity: .6;
